@@ -1,0 +1,5 @@
+{
+  "name": "Firebase Contact Form",
+  "description": "A modern and visually appealing contact form that securely stores user messages in a Firestore database. Features real-time data submission, validation feedback, and a clean user interface built with React, TypeScript, and Tailwind CSS.",
+  "requestFramePermissions": []
+}

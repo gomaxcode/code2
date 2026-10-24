@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anime Toy</title>
+  <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.min.css">
+  <style>
+    body { font-family: sans-serif; margin: 2rem; }
+    h1 { color: #d6336c; }
+  </style>
+</head>
+<body>
+  <h1>Anime Toy</h1>
+  <table id="products" class="display" style="width:100%">
+    <thead>
+      <tr><th>ID</th><th>Name</th><th>Series</th><th>Type</th><th>Price (USD)</th><th>Stock</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td>Monkey D. Luffy Figure</td><td>One Piece</td><td>Action Figure</td><td>34.99</td><td>25</td></tr>
+      <tr><td>2</td><td>Naruto Uzumaki Figure</td><td>Naruto</td><td>Action Figure</td><td>29.99</td><td>40</td></tr>
+      <tr><td>3</td><td>Goku Super Saiyan</td><td>Dragon Ball Z</td><td>Statue</td><td>59.99</td><td>12</td></tr>
+      <tr><td>4</td><td>Pikachu Plush</td><td>Pokémon</td><td>Plush</td><td>19.99</td><td>100</td></tr>
+      <tr><td>5</td><td>Totoro Plush</td><td>My Neighbor Totoro</td><td>Plush</td><td>24.50</td><td>35</td></tr>
+      <tr><td>6</td><td>Rem Nendoroid</td><td>Re:Zero</td><td>Nendoroid</td><td>54.00</td><td>18</td></tr>
+      <tr><td>7</td><td>Eren Yeager Figure</td><td>Attack on Titan</td><td>Action Figure</td><td>39.99</td><td>20</td></tr>
+      <tr><td>8</td><td>Tanjiro Kamado Figure</td><td>Demon Slayer</td><td>Scale Figure</td><td>69.99</td><td>15</td></tr>
+      <tr><td>9</td><td>Gojo Satoru Figure</td><td>Jujutsu Kaisen</td><td>Scale Figure</td><td>74.99</td><td>10</td></tr>
+      <tr><td>10</td><td>Sailor Moon Doll</td><td>Sailor Moon</td><td>Doll</td><td>44.95</td><td>22</td></tr>
+    </tbody>
+  </table>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.datatables.net/2.1.8/js/dataTables.min.js"></script>
+  <script>
+    $(function () {
+      $('#products').DataTable({ pageLength: 5, lengthMenu: [5, 10, 25] });
+    });
+  </script>
+</body>
+</html>
